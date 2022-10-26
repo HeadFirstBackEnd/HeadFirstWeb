@@ -19,7 +19,7 @@ public class MyServlet extends HttpServlet {
         // 获取输出流:
         PrintWriter pw = resp.getWriter();
         // 写入响应:
-        pw.write("<h1>Hello, world!</h1>");
+        pw.write("<h1>Hello, world! by MyServlet</h1>");
         // 最后不要忘记flush强制输出:
         pw.flush();
     }
