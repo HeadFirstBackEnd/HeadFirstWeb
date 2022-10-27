@@ -23,5 +23,30 @@
         <url-pattern>/greeting</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>custom</servlet-name>
+        <servlet-class>me.yifeiyuan.CustomServlet</servlet-class>
+
+        <init-param>
+            <param-name>name</param-name>
+            <param-value>Fitz</param-value>
+        </init-param>
+        <init-param>
+            <param-name>age</param-name>
+            <param-value>22</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>arg2</param-name>
+            <param-value>another arg</param-value>
+        </init-param>
+
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>custom</servlet-name>
+        <url-pattern>/custom</url-pattern>
+    </servlet-mapping>
 
 </web-app>
